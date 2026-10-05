@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APEX Multi-Sports Club | Champions Train Here</title>
+  <meta name="description" content="Welcome to APEX Sports Club - Premier multi-sport facility offering professional coaching, tournament leagues, world-class courts & pitches for Football, Cricket, Basketball, Badminton, Tennis and Swimming." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-info">
+        <span><i class="fa-solid fa-location-dot"></i> 450 Arena Boulevard, Sports City</span>
+        <span><i class="fa-solid fa-phone"></i> +1 (800) 555-APEX</span>
+        <span><i class="fa-solid fa-clock"></i> Mon - Sun: 05:30 AM - 11:00 PM</span>
+      </div>
+      <div class="top-actions">
+        <span class="live-indicator"><span class="pulse-dot"></span> Arena Open Today</span>
+        <div class="social-links-inline">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header" id="navbar">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-icon"><i class="fa-solid fa-trophy"></i></div>
+        <div class="logo-text">
+          <span class="brand-title">APEX</span>
+          <span class="brand-subtitle">SPORTS CLUB</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#sports" class="nav-link">Sports</a></li>
+          <li><a href="#fixtures" class="nav-link">Fixtures & Scores</a></li>
+          <li><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li><a href="#membership" class="nav-link">Membership</a></li>
+          <li><a href="#coaches" class="nav-link">Coaches</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#news" class="nav-link">News</a></li>
+          <li><a href="#merch" class="nav-link">Gear</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-cta-wrapper">
+          <button class="btn btn-primary open-modal-btn" data-modal="joinModal">
+            <i class="fa-solid fa-bolt"></i> Join Club
+          </button>
+        </div>
+      </nav>
+
+      <div class="header-right">
+        <button class="btn btn-outline-nav book-court-btn" onclick="scrollToSection('sports')">
+          <i class="fa-regular fa-calendar-check"></i> Book Court
+        </button>
+        <button class="btn btn-primary open-modal-btn" data-modal="joinModal">
+          <i class="fa-solid fa-id-card"></i> Join Now
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge-hero">
+          <i class="fa-solid fa-fire"></i> Registration Open For Spring Season 2026
+        </div>
+        <h1 class="hero-title">
+          UNLEASH YOUR <span class="highlight-text">CHAMPION</span> SPIRIT
+        </h1>
+        <p class="hero-subtitle">
+          Experience world-class sports facilities, professional academy coaching, elite tournament leagues, and an energetic athletic community across 8+ sports.
+        </p>
+        
+        <div class="hero-buttons">
+          <button class="btn btn-lg btn-primary open-modal-btn" data-modal="joinModal">
+            <i class="fa-solid fa-user-plus"></i> Become a Member
+          </button>
+          <a href="#fixtures" class="btn btn-lg btn-white">
+            <i class="fa-solid fa-calendar-days"></i> View Match Schedule
+          </a>
+        </div>
+
+        <!-- Quick highlights badges -->
+        <div class="hero-feature-tags">
+          <span><i class="fa-solid fa-circle-check"></i> FIFA Grade Turf</span>
+          <span><i class="fa-solid fa-circle-check"></i> BWF Approved Wooden Courts</span>
+          <span><i class="fa-solid fa-circle-check"></i> Floodlit Cricket Arena</span>
+          <span><i class="fa-solid fa-circle-check"></i> Heated Olympic Pool</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Stats Bar -->
+    <div class="hero-stats-banner">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="stat-details">
+            <h3 class="stat-number" data-target="2400">0</h3>
+            <span class="stat-suffix">+</span>
+            <p>Active Members</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-medal"></i></div>
+          <div class="stat-details">
+            <h3 class="stat-number" data-target="48">0</h3>
+            <span class="stat-suffix">+</span>
+            <p>Trophies Won</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-person-running"></i></div>
+          <div class="stat-details">
+            <h3 class="stat-number" data-target="32">0</h3>
+            <span class="stat-suffix">+</span>
+            <p>Certified Coaches</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="stat-details">
+            <h3 class="stat-number" data-target="15">0</h3>
+            <span class="stat-suffix">+</span>
+            <p>Annual Tournaments</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Sports Section -->
+  <section class="section-padding sports-section" id="sports">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">OUR DISCIPLINES</span>
+        <h2 class="section-title">Explore Sports Arenas & Academies</h2>
+        <p class="section-description">
+          Whether you play competitively in league championships or train for fitness and leisure, APEX has dedicated facilities and tailored training sessions for all age groups.
+        </p>
+      </div>
+
+      <div class="sports-filter-buttons">
+        <button class="sport-filter-btn active" data-filter="all">All Sports</button>
+        <button class="sport-filter-btn" data-filter="team">Team Sports</button>
+        <button class="sport-filter-btn" data-filter="racquet">Racquet Sports</button>
+        <button class="sport-filter-btn" data-filter="individual">Fitness & Aquatic</button>
+      </div>
+
+      <div class="sports-grid" id="sportsGrid">
+        <!-- Football -->
+        <div class="sport-card" data-category="team">
+          <div class="sport-card-image">
+            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80" alt="Football Arena" loading="lazy" />
+            <span class="sport-badge"><i class="fa-solid fa-futbol"></i> Football</span>
+          </div>
+          <div class="sport-card-body">
+            <h3>Football & Futsal Academy</h3>
+            <p>Full 11-a-side natural turf pitch and two 5-a-side floodlit astro-turf cages. Youth academy & weekend corporate leagues.</p>
+            <div class="sport-specs">
+              <span><i class="fa-regular fa-clock"></i> 6 AM - 11 PM</span>
+              <span><i class="fa-solid fa-users"></i> 5v5 & 11v11</span>
+              <span><i class="fa-solid fa-award"></i> UEFA Licensed</span>
+            </div>
+            <div class="sport-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-modal="joinModal" data-sport="Football">Join Academy</button>
+              <a href="#fixtures" class="card-link">Fixtures <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cricket -->
+        <div class="sport-card" data-category="team">
+          <div class="sport-card-image">
+            <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80" alt="Cricket Stadium" loading="lazy" />
+            <span class="sport-badge"><i class="fa-solid fa-baseball-bat-ball"></i> Cricket</span>
+          </div>
+          <div class="sport-card-body">
+            <h3>Cricket Arena & Batting Nets</h3>
+            <p>BCCI standard grass wicket, automated bowling machines, high-speed video analysis and 6 indoor & outdoor practice nets.</p>
+            <div class="sport-specs">
+              <span><i class="fa-regular fa-clock"></i> 6 AM - 10 PM</span>
+              <span><i class="fa-solid fa-bolt"></i> 6 Turf Nets</span>
+              <span><i class="fa-solid fa-award"></i> Bowling Machines</span>
+            </div>
+            <div class="sport-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-modal="joinModal" data-sport="Cricket">Join Academy</button>
+              <a href="#fixtures" class="card-link">Fixtures <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Basketball -->
+        <div class="sport-card" data-category="team">
+          <div class="sport-card-image">
+            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80" alt="Basketball Court" loading="lazy" />
+            <span class="sport-badge"><i class="fa-solid fa-basketball"></i> Basketball</span>
+          </div>
+          <div class="sport-card-body">
+            <h3>Indoor Hardwood Basketball</h3>
+            <p>FIBA-certified maple hardwood court with electronic shot clocks, spring-loaded glass backboards, and spectator seating.</p>
+            <div class="sport-specs">
+              <span><i class="fa-regular fa-clock"></i> 6 AM - 11 PM</span>
+              <span><i class="fa-solid fa-shield"></i> FIBA Hardwood</span>
+              <span><i class="fa-solid fa-award"></i> 3x3 & 5v5</span>
+            </div>
+            <div class="sport-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-modal="joinModal" data-sport="Basketball">Join Academy</button>
+              <a href="#fixtures" class="card-link">Fixtures <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badminton -->
+        <div class="sport-card" data-category="racquet">
+          <div class="sport-card-image">
+            <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80" alt="Badminton Court" loading="lazy" />
+            <span class="sport-badge"><i class="fa-solid fa-feather"></i> Badminton</span>
+          </div>
+          <div class="sport-card-body">
+            <h3>Badminton Multi-Courts</h3>
+            <p>8 international BWF-approved synthetic shock-absorption courts with glare-free specialized LED lighting and AC lounge.</p>
+            <div class="sport-specs">
+              <span><i class="fa-regular fa-clock"></i> 5:30 AM - 11 PM</span>
+              <span><i class="fa-solid fa-layer-group"></i> 8 Courts</span>
+              <span><i class="fa-solid fa-award"></i> BWF Approved</span>
+            </div>
+            <div class="sport-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-modal="joinModal" data-sport="Badminton">Join Academy</button>
+              <a href="#fixtures" class="card-link">Fixtures <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tennis -->
+        <div class="sport-card" data-category="racquet">
+          <div class="sport-card-image">
+            <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=800&q=80" alt="Tennis Courts" loading="lazy" />
+            <span class="sport-badge"><i class="fa-solid fa-table-tennis-paddle-ball"></i> Tennis</span>
+          </div>
+          <div class="sport-card-body">
+            <h3>Championship Tennis Courts</h3>
+            <p>4 synthetic acrylic hard courts and 2 clay courts. Professional racket stringing, ball machines and certified coaches.</p>
+            <div class="sport-specs">
+              <span><i class="fa-regular fa-clock"></i> 6 AM - 10 PM</span>
+              <span><i class="fa-solid fa-sun"></i> Hard & Clay</span>
+              <span><i class="fa-solid fa-award"></i> ITF Certified</span>
+            </div>
+            <div class="sport-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-modal="joinModal" data-sport="Tennis">Join Academy</button>
+              <a href="#fixtures" class="card-link">Fixtures <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swimming & Aquatics -->
+        <div class="sport-card" data-category="individual">
+          <div class="sport-card-image">
+            <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=800&q=80" alt="Swimming Pool" loading="lazy" />
+            <span class="sport-badge"><i class="fa-solid fa-person-swimming"></i> Swimming</span>
+          </div>
+          <div class="sport-card-body">
+            <h3>Olympic Aquatic Complex</h3>
+            <p>50m 8-lane temperature-controlled swimming pool with electronic touch pads, diving boards and dedicated kids pool.</p>
+            <div class="sport-specs">
+              <span><i class="fa-regular fa-clock"></i> 6 AM - 9 PM</span>
+              <span><i class="fa-solid fa-temperature-arrow-up"></i> Heated Pool</span>
+              <span><i class="fa-solid fa-award"></i> FINA Standard</span>
+            </div>
+            <div class="sport-card-footer">
+              <button class="btn btn-sm btn-outline open-modal-btn" data-modal="joinModal" data-sport="Swimming">Join Academy</button>
+              <a href="#membership" class="card-link">Passes <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Match Fixtures & Live Scores Section -->
+  <section class="section-padding fixtures-section" id="fixtures">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">LEAGUES & TOURNAMENTS</span>
+        <h2 class="section-title">Match Fixtures & Live Scoreboard</h2>
+        <p class="section-description">
+          Track real-time scores, upcoming derby matches, and championship tournament schedules across all club divisions.
+        </p>
+      </div>
+
+      <!-- Fixtures Tabs -->
+      <div class="fixtures-tabs">
+        <button class="fixture-tab-btn active" data-sport="all"><i class="fa-solid fa-globe"></i> All Matches</button>
+        <button class="fixture-tab-btn" data-sport="football"><i class="fa-solid fa-futbol"></i> Football</button>
+        <button class="fixture-tab-btn" data-sport="cricket"><i class="fa-solid fa-baseball-bat-ball"></i> Cricket</button>
+        <button class="fixture-tab-btn" data-sport="basketball"><i class="fa-solid fa-basketball"></i> Basketball</button>
+        <button class="fixture-tab-btn" data-sport="badminton"><i class="fa-solid fa-feather"></i> Badminton</button>
+      </div>
+
+      <div class="fixtures-list" id="fixturesList">
+        <!-- Live Match Card -->
+        <div class="fixture-card live-match" data-sport="football">
+          <div class="fixture-header">
+            <span class="league-tag"><i class="fa-solid fa-futbol"></i> Apex Premier League • Semifinal</span>
+            <span class="status-badge status-live"><span class="pulse-dot"></span> LIVE 68'</span>
+          </div>
+          <div class="fixture-body">
+            <div class="team-block home">
+              <div class="team-logo"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="team-meta">
+                <span class="team-name">Apex Thunder FC</span>
+                <span class="team-rank">Home</span>
+              </div>
+              <span class="score-display">2</span>
+            </div>
+            <div class="fixture-vs">
+              <span class="vs-text">VS</span>
+              <span class="venue-info">Main Stadium</span>
+            </div>
+            <div class="team-block away">
+              <span class="score-display">1</span>
+              <div class="team-meta">
+                <span class="team-name">Metro Strikers</span>
+                <span class="team-rank">Away</span>
+              </div>
+              <div class="team-logo alt"><i class="fa-solid fa-bolt"></i></div>
+            </div>
+          </div>
+          <div class="fixture-footer">
+            <span><i class="fa-regular fa-clock"></i> Started 07:00 PM</span>
+            <span class="highlight-scorers"><i class="fa-solid fa-futbol"></i> Apex: R. Silva 24', M. Torres 58' | MS: D. Vance 41'</span>
+            <a href="#contact" class="btn btn-xs btn-primary">Watch Stream</a>
+          </div>
+        </div>
+
+        <!-- Cricket Live Match -->
+        <div class="fixture-card live-match" data-sport="cricket">
+          <div class="fixture-header">
+            <span class="league-tag"><i class="fa-solid fa-baseball-bat-ball"></i> Apex T20 Championship • Super 8</span>
+            <span class="status-badge status-live"><span class="pulse-dot"></span> LIVE 16.4 Ov</span>
+          </div>
+          <div class="fixture-body">
+            <div class="team-block home">
+              <div class="team-logo"><i class="fa-solid fa-crown"></i></div>
+              <div class="team-meta">
+                <span class="team-name">Apex Royals CC</span>
+                <span class="team-detail">168/4 (20.0 ov)</span>
+              </div>
+              <span class="score-display cricket-score">168/4</span>
+            </div>
+            <div class="fixture-vs">
+              <span class="vs-text">VS</span>
+              <span class="venue-info">Turf Ground A</span>
+            </div>
+            <div class="team-block away">
+              <span class="score-display cricket-score">142/3</span>
+              <div class="team-meta">
+                <span class="team-name">Spartans CC</span>
+                <span class="team-detail">Target: 169 (Req. 27 from 20)</span>
+              </div>
+              <div class="team-logo alt"><i class="fa-solid fa-shield"></i></div>
+            </div>
+          </div>
+          <div class="fixture-footer">
+            <span><i class="fa-regular fa-clock"></i> Evening Match</span>
+            <span class="highlight-scorers"><i class="fa-solid fa-fire"></i> K. Rahul 64*(38) • Bowler: A. Khan 2/28</span>
+            <a href="#contact" class="btn btn-xs btn-primary">Ball by Ball</a>
+          </div>
+        </div>
+
+        <!-- Upcoming Basketball Match -->
+        <div class="fixture-card" data-sport="basketball">
+          <div class="fixture-header">
+            <span class="league-tag"><i class="fa-solid fa-basketball"></i> Inter-Club Slam Cup • Final</span>
+            <span class="status-badge status-upcoming"><i class="fa-regular fa-calendar"></i> Tomorrow, 06:30 PM</span>
+          </div>
+          <div class="fixture-body">
+            <div class="team-block home">
+              <div class="team-logo"><i class="fa-solid fa-dragon"></i></div>
+              <div class="team-meta">
+                <span class="team-name">Apex Ballers</span>
+                <span class="team-rank">Seed #1</span>
+              </div>
+              <span class="score-display tba">-</span>
+            </div>
+            <div class="fixture-vs">
+              <span class="vs-text">VS</span>
+              <span class="venue-info">Wooden Court 1</span>
+            </div>
+            <div class="team-block away">
+              <span class="score-display tba">-</span>
+              <div class="team-meta">
+                <span class="team-name">Coastline Raptors</span>
+                <span class="team-rank">Seed #2</span>
+              </div>
+              <div class="team-logo alt"><i class="fa-solid fa-feather"></i></div>
+            </div>
+          </div>
+          <div class="fixture-footer">
+            <span><i class="fa-solid fa-ticket"></i> Free entry for club members</span>
+            <span><i class="fa-solid fa-location-pin"></i> Apex Indoor Court A</span>
+            <button class="btn btn-xs btn-outline open-modal-btn" data-modal="joinModal">Book Seat</button>
+          </div>
+        </div>
+
+        <!-- Upcoming Badminton Match -->
+        <div class="fixture-card" data-sport="badminton">
+          <div class="fixture-header">
+            <span class="league-tag"><i class="fa-solid fa-feather"></i> Masters Singles Open • Quarterfinal</span>
+            <span class="status-badge status-upcoming"><i class="fa-regular fa-calendar"></i> Sat, Oct 11 • 10:00 AM</span>
+          </div>
+          <div class="fixture-body">
+            <div class="team-block home">
+              <div class="team-logo"><i class="fa-solid fa-user-ninja"></i></div>
+              <div class="team-meta">
+                <span class="team-name">Vikram Sen</span>
+                <span class="team-rank">Rank #3</span>
+              </div>
+              <span class="score-display tba">-</span>
+            </div>
+            <div class="fixture-vs">
+              <span class="vs-text">VS</span>
+              <span class="venue-info">Court 3 (AC)</span>
+            </div>
+            <div class="team-block away">
+              <span class="score-display tba">-</span>
+              <div class="team-meta">
+                <span class="team-name">Lucas Meyer</span>
+                <span class="team-rank">Rank #6</span>
+              </div>
+              <div class="team-logo alt"><i class="fa-solid fa-user"></i></div>
+            </div>
+          </div>
+          <div class="fixture-footer">
+            <span><i class="fa-solid fa-tv"></i> Live court recording available</span>
+            <span><i class="fa-solid fa-award"></i> Best of 3 sets (21 pts)</span>
+            <button class="btn btn-xs btn-outline open-modal-btn" data-modal="joinModal">Register Fan Pass</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities & Amenities Section -->
+  <section class="section-padding facilities-section bg-light" id="facilities">
+    <div class="container">
+      <div class="facility-layout">
+        <div class="facility-intro">
+          <span class="subheading">WORLD-CLASS INFRASTRUCTURE</span>
+          <h2 class="section-title">Built for Peak Athletic Performance</h2>
+          <p class="section-description">
+            Spread across 15 pristine acres, APEX Sports Club provides unmatched sports engineering, recovery centers, and modern clubhouse luxury.
+          </p>
+          
+          <div class="facility-feature-list">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-dumbbell"></i></div>
+              <div class="feature-text">
+                <h4>Strength & High-Performance Gym</h4>
+                <p>Fully equipped conditioning lab with Olympic barbell racks, cardio deck, and kettlebell zones.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+              <div class="feature-text">
+                <h4>Physiotherapy & Sports Recovery</h4>
+                <p>Dedicated ice baths, steam/sauna rooms, sports massage therapists and injury rehabilitation.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+              <div class="feature-text">
+                <h4>Sports Nutritionist & Café Lounge</h4>
+                <p>High-protein smoothie bar, customized dietary consultations, and member viewing lounge with live sports broadcast.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-car"></i></div>
+              <div class="feature-text">
+                <h4>Locker Rooms & 300+ Car Parking</h4>
+                <p>Digital secure lockers, hot rain showers, sauna suites, EV charging bays and 24/7 security.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="facility-showcase-visual">
+          <div class="showcase-main-card">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="Club Gym & Facility" />
+            <div class="showcase-badge-floating">
+              <i class="fa-solid fa-medal"></i>
+              <div>
+                <strong>Award Winning Club</strong>
+                <span>Best Sports Arena 2024 & 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-sub-grid">
+            <div class="sub-card">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" alt="Training Zone" />
+              <span>Pro Training Zone</span>
+            </div>
+            <div class="sub-card">
+              <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=500&q=80" alt="Recovery Spa" />
+              <span>Recovery & Sauna</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Pricing Section -->
+  <section class="section-padding membership-section" id="membership">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">JOIN OUR COMMUNITY</span>
+        <h2 class="section-title">Flexible Membership Plans</h2>
+        <p class="section-description">
+          Choose a plan that fits your athletic goals. All memberships include full access to locker rooms, fitness centers, and club tournaments.
+        </p>
+
+        <!-- Billing Cycle Toggle -->
+        <div class="pricing-toggle-wrapper">
+          <span class="toggle-label active" id="monthlyLabel">Monthly</span>
+          <label class="switch">
+            <input type="checkbox" id="pricingToggle" />
+            <span class="slider round"></span>
+          </label>
+          <span class="toggle-label" id="annualLabel">Annual <span class="discount-pill">Save 20%</span></span>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter Plan -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3 class="plan-name">Club Starter</h3>
+            <p class="plan-tagline">Ideal for fitness enthusiasts & recreational sports</p>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="amount" data-monthly="39" data-annual="31">39</span>
+              <span class="period">/ month</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Access to 1 chosen sport court</li>
+            <li><i class="fa-solid fa-check"></i> Standard gym & fitness equipment</li>
+            <li><i class="fa-solid fa-check"></i> 4 court booking credits / month</li>
+            <li><i class="fa-solid fa-check"></i> Locker & shower facility access</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Coach 1-on-1 personal training</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> League tournament entry pass</li>
+          </ul>
+          <div class="plan-footer">
+            <button class="btn btn-outline btn-block open-modal-btn" data-modal="joinModal" data-plan="Club Starter">Choose Starter</button>
+          </div>
+        </div>
+
+        <!-- Pro Athlete Plan (Featured) -->
+        <div class="pricing-card featured">
+          <div class="popular-ribbon"><i class="fa-solid fa-star"></i> MOST POPULAR</div>
+          <div class="plan-header">
+            <h3 class="plan-name">Pro Athlete</h3>
+            <p class="plan-tagline">Complete multi-sport access with coach mentoring</p>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="amount" data-monthly="79" data-annual="63">79</span>
+              <span class="period">/ month</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> <strong>Unlimited access</strong> to all 6+ sports</li>
+            <li><i class="fa-solid fa-check"></i> Full gym, sauna & Olympic pool access</li>
+            <li><i class="fa-solid fa-check"></i> 16 advance court booking credits</li>
+            <li><i class="fa-solid fa-check"></i> 2 Monthly 1-on-1 coach masterclasses</li>
+            <li><i class="fa-solid fa-check"></i> Free entry to internal club leagues</li>
+            <li><i class="fa-solid fa-check"></i> 15% discount on club merchandise</li>
+          </ul>
+          <div class="plan-footer">
+            <button class="btn btn-primary btn-block open-modal-btn" data-modal="joinModal" data-plan="Pro Athlete">Get Pro Pass</button>
+          </div>
+        </div>
+
+        <!-- VIP Family / Elite Squad Plan -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3 class="plan-name">VIP Champion Squad</h3>
+            <p class="plan-tagline">For competitive players, families & corporate teams</p>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="amount" data-monthly="129" data-annual="103">129</span>
+              <span class="period">/ month</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Up to 4 family or team members</li>
+            <li><i class="fa-solid fa-check"></i> Unlimited prime-time court bookings</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated personal coach & physio checkup</li>
+            <li><i class="fa-solid fa-check"></i> VIP lounge & private locker suite</li>
+            <li><i class="fa-solid fa-check"></i> Free guest passes (5 per month)</li>
+            <li><i class="fa-solid fa-check"></i> Free tournament jersey kit</li>
+          </ul>
+          <div class="plan-footer">
+            <button class="btn btn-outline btn-block open-modal-btn" data-modal="joinModal" data-plan="VIP Champion Squad">Choose VIP Plan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coaches & Academy Mentors -->
+  <section class="section-padding coaches-section bg-light" id="coaches">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">WORLD-CLASS MENTORS</span>
+        <h2 class="section-title">Meet Our Pro Coaching Staff</h2>
+        <p class="section-description">
+          Learn techniques, mental conditioning, and strategic gameplay from national champions and internationally certified head coaches.
+        </p>
+      </div>
+
+      <div class="coaches-grid">
+        <!-- Coach 1 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Head Coach Marcus Vance" />
+            <div class="coach-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <span class="coach-sport">Football Head Coach</span>
+            <h3>Marcus Vance</h3>
+            <p class="coach-cred">UEFA 'A' License • Ex-National League Pro (12 Yrs)</p>
+            <p class="coach-bio">Specializes in tactical pressing, agility training, and youth development academies.</p>
+          </div>
+        </div>
+
+        <!-- Coach 2 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Cricket Coach Rohan Sharma" />
+            <div class="coach-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <span class="coach-sport">Cricket Director</span>
+            <h3>Rohan Sharma</h3>
+            <p class="coach-cred">BCCI Level 3 Coach • Former First-Class Captain</p>
+            <p class="coach-bio">Pioneer of modern strokeplay biomechanics and speed bowling analysis programs.</p>
+          </div>
+        </div>
+
+        <!-- Coach 3 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Badminton Coach Elena Rostova" />
+            <div class="coach-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <span class="coach-sport">Racquet Sports Lead</span>
+            <h3>Elena Rostova</h3>
+            <p class="coach-cred">BWF Certified Elite Mentor • Olympic Doubles Medalist</p>
+            <p class="coach-bio">Master in rapid footwork drills, net control, and competitive tournament preparation.</p>
+          </div>
+        </div>
+
+        <!-- Coach 4 -->
+        <div class="coach-card">
+          <div class="coach-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Basketball Coach David Jenkins" />
+            <div class="coach-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="coach-info">
+            <span class="coach-sport">Basketball & Strength</span>
+            <h3>David Jenkins</h3>
+            <p class="coach-cred">FIBA Certified Trainer • NCAA Champion Alumni</p>
+            <p class="coach-bio">Focused on shooting mechanics, plyometrics, explosive jumping and defensive stamina.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filterable Gallery Section -->
+  <section class="section-padding gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">MOMENTS OF GLORY</span>
+        <h2 class="section-title">Club Photo & Action Gallery</h2>
+        <p class="section-description">
+          Relive unforgettable match moments, training camps, tournament celebrations, and arena facilities.
+        </p>
+      </div>
+
+      <!-- Gallery Filter -->
+      <div class="gallery-filters">
+        <button class="gallery-filter-btn active" data-gallery="all">All Photos</button>
+        <button class="gallery-filter-btn" data-gallery="tournaments">Tournaments</button>
+        <button class="gallery-filter-btn" data-gallery="training">Training Camps</button>
+        <button class="gallery-filter-btn" data-gallery="facilities">Facilities</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-category="tournaments" data-title="Championship Trophy Celebration" data-img="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=80" alt="Championship Trophy" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>Annual Championship Win</h4>
+            <span>Tournaments</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="training" data-title="Intensive Football Drills" data-img="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=600&q=80" alt="Football Drills" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>Youth Agility Drills</h4>
+            <span>Training Camps</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="facilities" data-title="Floodlit Night Cricket Turf" data-img="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=600&q=80" alt="Night Cricket Turf" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>Night Stadium Lights</h4>
+            <span>Facilities</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="tournaments" data-title="Badminton Grand Slam Final" data-img="https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=600&q=80" alt="Badminton Match" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>Singles Grand Slam Final</h4>
+            <span>Tournaments</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="facilities" data-title="Olympic Pool Complex" data-img="https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=600&q=80" alt="Olympic Pool" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>50m Heated Lap Pool</h4>
+            <span>Facilities</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="training" data-title="Strength Conditioning Session" data-img="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Strength Conditioning" loading="lazy" />
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+            <h4>Strength Lab Workout</h4>
+            <span>Training Camps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Upcoming Events -->
+  <section class="section-padding news-section bg-light" id="news">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">LATEST HAPPENINGS</span>
+        <h2 class="section-title">Club News & Upcoming Events</h2>
+        <p class="section-description">
+          Stay informed about tryouts, weekend leagues, community charity runs, and new arena upgrades.
+        </p>
+      </div>
+
+      <div class="news-grid">
+        <!-- News Card 1 -->
+        <article class="news-card">
+          <div class="news-img">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Summer Sports Camp" />
+            <span class="news-category">Announcement</span>
+          </div>
+          <div class="news-body">
+            <div class="news-date"><i class="fa-regular fa-calendar-days"></i> Oct 15, 2026</div>
+            <h3 class="news-title"><a href="#contact">Annual Junior Summer Sports Camp Registration Begins</a></h3>
+            <p class="news-excerpt">Open for ages 6–16 across Football, Cricket, Tennis and Swimming. Early bird discount of 25% valid until Oct 25.</p>
+            <div class="news-meta">
+              <a href="#contact" class="read-more">Read Details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- News Card 2 -->
+        <article class="news-card">
+          <div class="news-img">
+            <img src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&w=600&q=80" alt="Football Championship" />
+            <span class="news-category">Tournament</span>
+          </div>
+          <div class="news-body">
+            <div class="news-date"><i class="fa-regular fa-calendar-days"></i> Oct 22, 2026</div>
+            <h3 class="news-title"><a href="#contact">Apex Corporate Football League 2026 Fixtures Revealed</a></h3>
+            <p class="news-excerpt">Over 32 corporate teams set to battle under the floodlights every weekend. Free entry passes available for all club members.</p>
+            <div class="news-meta">
+              <a href="#fixtures" class="read-more">View Fixtures <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- News Card 3 -->
+        <article class="news-card">
+          <div class="news-img">
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Indoor Badminton Upgrade" />
+            <span class="news-category">Facility Upgrade</span>
+          </div>
+          <div class="news-body">
+            <div class="news-date"><i class="fa-regular fa-calendar-days"></i> Nov 05, 2026</div>
+            <h3 class="news-title"><a href="#contact">Upgraded BWF Certified Wooden Courts Inaugurated</a></h3>
+            <p class="news-excerpt">Enhanced anti-slip cushioning and high-lumen glare-free lights installed across all 8 badminton & squash courts.</p>
+            <div class="news-meta">
+              <a href="#facilities" class="read-more">Explore Courts <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Club Merchandise Showcase -->
+  <section class="section-padding merch-section" id="merch">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">APEX GEAR & APPAREL</span>
+        <h2 class="section-title">Official Club Store</h2>
+        <p class="section-description">
+          Wear your club colors with pride. High performance breathable dry-fit match jerseys, training gear, and equipment.
+        </p>
+      </div>
+
+      <div class="merch-grid">
+        <!-- Merch 1 -->
+        <div class="merch-card">
+          <div class="merch-img">
+            <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=500&q=80" alt="Apex Official Home Jersey" />
+            <span class="merch-badge">Best Seller</span>
+          </div>
+          <div class="merch-info">
+            <h4>Apex Official Home Jersey 2026</h4>
+            <p class="merch-desc">Breathable moisture-wicking aerodynamic athletic mesh</p>
+            <div class="merch-price-row">
+              <span class="merch-price">$45.00</span>
+              <button class="btn btn-xs btn-primary open-modal-btn" data-modal="joinModal" data-item="Apex Home Jersey">Order Gear</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Merch 2 -->
+        <div class="merch-card">
+          <div class="merch-img">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80" alt="Club Training Tracksuit Hoodie" />
+            <span class="merch-badge">New</span>
+          </div>
+          <div class="merch-info">
+            <h4>Apex Elite Windbreaker Hoodie</h4>
+            <p class="merch-desc">Thermal insulated weather-proof training jacket</p>
+            <div class="merch-price-row">
+              <span class="merch-price">$65.00</span>
+              <button class="btn btn-xs btn-primary open-modal-btn" data-modal="joinModal" data-item="Elite Windbreaker Hoodie">Order Gear</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Merch 3 -->
+        <div class="merch-card">
+          <div class="merch-img">
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=80" alt="Club Sports Duffel Bag" />
+          </div>
+          <div class="merch-info">
+            <h4>Pro Athlete Gear Duffel Bag (45L)</h4>
+            <p class="merch-desc">Dedicated shoe compartment & water-resistant nylon</p>
+            <div class="merch-price-row">
+              <span class="merch-price">$38.00</span>
+              <button class="btn btn-xs btn-primary open-modal-btn" data-modal="joinModal" data-item="Athlete Duffel Bag">Order Gear</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Merch 4 -->
+        <div class="merch-card">
+          <div class="merch-img">
+            <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=500&q=80" alt="Club Cap" />
+          </div>
+          <div class="merch-info">
+            <h4>Apex Performance Snapback Cap</h4>
+            <p class="merch-desc">UV protection with laser-cut ventilation holes</p>
+            <div class="merch-price-row">
+              <span class="merch-price">$22.00</span>
+              <button class="btn btn-xs btn-primary open-modal-btn" data-modal="joinModal" data-item="Performance Snapback Cap">Order Gear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Member Stories -->
+  <section class="section-padding testimonials-section bg-light">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subheading">ATHLETE EXPERIENCES</span>
+        <h2 class="section-title">What Our Members Say</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="quote">
+            "APEX has transformed our weekend routine. The cricket nets with automated bowling machines and the FIFA-grade turf pitch are second to none in this city!"
+          </p>
+          <div class="author-info">
+            <div class="author-avatar"><i class="fa-solid fa-user-check"></i></div>
+            <div>
+              <strong>Arjun Mehta</strong>
+              <span>Cricket Team Captain • Member for 3 Years</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="quote">
+            "The badminton coaching by Elena helped my 14-year-old daughter qualify for the State Junior Championship. Incredible community, spotless locker rooms, and great staff!"
+          </p>
+          <div class="author-info">
+            <div class="author-avatar"><i class="fa-solid fa-user-check"></i></div>
+            <div>
+              <strong>Sarah Jenkins</strong>
+              <span>Parent & Pro Athlete Member</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="quote">
+            "Booking courts on my phone is super seamless. The recovery ice baths and fitness gym have boosted my basketball game tremendously. Highly recommended!"
+          </p>
+          <div class="author-info">
+            <div class="author-avatar"><i class="fa-solid fa-user-check"></i></div>
+            <div>
+              <strong>David Chen</strong>
+              <span>Basketball League Player</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info & Timings -->
+        <div class="contact-info-panel">
+          <span class="subheading">GET IN TOUCH</span>
+          <h2 class="section-title text-white">Visit The Apex Sports Complex</h2>
+          <p class="contact-lead">
+            Have questions regarding tournament registrations, corporate bookings, coaching trials or membership plans? Our club concierge is here to help.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-item">
+              <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Club Address</strong>
+                <p>450 Arena Boulevard, Sports City Metro District, SC 90210</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Front Desk & Hotline</strong>
+                <p>+1 (800) 555-APEX / +1 (800) 555-2739</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Email Inquiries</strong>
+                <p>membership@apexsportsclub.com / info@apexsportsclub.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="c-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong>Operating Hours</strong>
+                <p>Monday - Sunday: 05:30 AM – 11:00 PM (All 365 Days)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="club-socials-card">
+            <span>Follow Club Updates:</span>
+            <div class="social-pills">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact / Trial Form -->
+        <div class="contact-form-card">
+          <div class="form-header">
+            <h3>Book a Free Trial Session or Send Query</h3>
+            <p>Fill in your details below and our team will get back to you within 2 hours.</p>
+          </div>
+
+          <form id="contactForm" class="contact-form" onsubmit="handleContactSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName">Full Name *</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="cName" required placeholder="John Doe" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cPhone">Phone Number *</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="tel" id="cPhone" required placeholder="+1 (555) 000-0000" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cEmail">Email Address *</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="cEmail" required placeholder="john@example.com" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cSport">Interested Sport *</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-trophy"></i>
+                  <select id="cSport" required>
+                    <option value="" disabled selected>Select Sport</option>
+                    <option value="Football">Football / Soccer</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Badminton">Badminton</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Multi-Sport">Multi-Sport Membership</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cMessage">Message / Booking Notes</label>
+              <textarea id="cMessage" rows="4" placeholder="Tell us about your experience level, preferred court timings or specific inquiries..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <i class="fa-solid fa-paper-plane"></i> Send Inquiry / Book Free Trial
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="logo-text">
+            <span class="brand-title">APEX</span>
+            <span class="brand-subtitle">SPORTS CLUB</span>
+          </div>
+        </div>
+        <p class="footer-about">
+          Premier multi-sport destination dedicated to nurturing athletic potential, organizing competitive leagues, and building a passionate sports community.
+        </p>
+        <div class="footer-accreditations">
+          <span><i class="fa-solid fa-shield-halved"></i> Certified Sports Complex</span>
+          <span><i class="fa-solid fa-certificate"></i> National League Affiliate</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sports">Sports Disciplines</a></li>
+          <li><a href="#fixtures">Fixtures & Live Scores</a></li>
+          <li><a href="#facilities">Facilities & Gym</a></li>
+          <li><a href="#membership">Membership Plans</a></li>
+          <li><a href="#gallery">Media Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Sports Academies</h4>
+        <ul class="footer-links">
+          <li><a href="#sports">Football Academy</a></li>
+          <li><a href="#sports">Cricket Batting Labs</a></li>
+          <li><a href="#sports">Basketball Hardwood League</a></li>
+          <li><a href="#sports">Badminton High-Performance</a></li>
+          <li><a href="#sports">ITF Tennis Training</a></li>
+          <li><a href="#sports">Olympic Aquatics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4 class="footer-heading">Club Newsletter</h4>
+        <p>Subscribe for weekly fixture schedules, coaching tips, and early bird tournament access.</p>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <div class="newsletter-input-group">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </form>
+        <div class="badge-safe"><i class="fa-solid fa-lock"></i> We respect your privacy. No spam.</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 APEX Sports Club. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Membership</a>
+          <a href="#">Court Rules & Safety</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Registration / Join Club -->
+  <div class="modal-overlay" id="joinModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <div class="modal-icon"><i class="fa-solid fa-id-card"></i></div>
+        <div>
+          <h3 id="modalTitle">Join APEX Sports Club</h3>
+          <p id="modalSubtitle">Start your athletic journey with premier club perks</p>
+        </div>
+      </div>
+
+      <form class="modal-form" id="registrationForm" onsubmit="handleRegisterSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="regName">Full Name *</label>
+            <input type="text" id="regName" required placeholder="Alex Morgan" />
+          </div>
+          <div class="form-group">
+            <label for="regEmail">Email Address *</label>
+            <input type="email" id="regEmail" required placeholder="alex@example.com" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="regPhone">Phone Number *</label>
+            <input type="tel" id="regPhone" required placeholder="+1 (555) 234-5678" />
+          </div>
+          <div class="form-group">
+            <label for="regAge">Age Category *</label>
+            <select id="regAge" required>
+              <option value="Junior (Under 16)">Junior (Under 16)</option>
+              <option value="Youth (16-21)">Youth (16-21)</option>
+              <option value="Adult (22-45)" selected>Adult (22-45)</option>
+              <option value="Senior Masters (45+)">Senior Masters (45+)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="regSport">Primary Sport *</label>
+            <select id="regSport" required>
+              <option value="All Multi-Sports">All Multi-Sports (Full Access)</option>
+              <option value="Football">Football / Futsal</option>
+              <option value="Cricket">Cricket</option>
+              <option value="Basketball">Basketball</option>
+              <option value="Badminton">Badminton</option>
+              <option value="Tennis">Tennis</option>
+              <option value="Swimming">Swimming</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="regPlan">Membership Plan *</label>
+            <select id="regPlan" required>
+              <option value="Club Starter">Club Starter ($39/mo)</option>
+              <option value="Pro Athlete" selected>Pro Athlete ($79/mo)</option>
+              <option value="VIP Champion Squad">VIP Champion Squad ($129/mo)</option>
+              <option value="Gear Order / Trial">Single Trial / Gear Order</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="regNotes">Special Notes / Medical / Court Preferences (Optional)</label>
+          <input type="text" id="regNotes" placeholder="e.g. Left-handed badminton player, interested in weekend morning slots" />
+        </div>
+
+        <div class="form-checkbox">
+          <input type="checkbox" id="regTerms" required />
+          <label for="regTerms">I agree to the club safety guidelines and code of conduct.</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          <i class="fa-solid fa-check-circle"></i> Complete Club Registration
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Lightbox for Gallery -->
+  <div class="lightbox-overlay" id="galleryLightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="lightbox-content">
+      <img src="" id="lightboxImg" alt="Enlarged gallery visual" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    <button class="lightbox-nav next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Toast Notification Alert -->
+  <div class="toast-container" id="toast">
+    <div class="toast-icon" id="toastIcon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-message" id="toastMessage">Action completed successfully!</div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
